@@ -1,0 +1,25 @@
+2016-09-08 09:13:31.072 user:       INFO 6228 --- [main] com.main.RestWebCrawlingApplication      : Starting RestWebCrawlingApplication on punws-rahulgu with PID 6228 (D:\aaaa_rahul_help\java_imp_notes\RestWebCrawling\target\classes started by RahulG in D:\aaaa_rahul_help\java_imp_notes\RestWebCrawling)
+2016-09-08 09:13:31.074 user:       INFO 6228 --- [main] com.main.RestWebCrawlingApplication      : The following profiles are active: dev
+2016-09-08 09:13:31.108 user:       INFO 6228 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e07db1f: startup date [Thu Sep 08 09:13:31 IST 2016]; root of context hierarchy
+2016-09-08 09:13:32.036 user:       INFO 6228 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8087 (http)
+2016-09-08 09:13:32.044 user:       INFO 6228 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2016-09-08 09:13:32.045 user:       INFO 6228 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.4
+2016-09-08 09:13:32.107 user:       INFO 6228 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2016-09-08 09:13:32.107 user:       INFO 6228 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1001 ms
+2016-09-08 09:13:32.201 user:       INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2016-09-08 09:13:32.203 user:       INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2016-09-08 09:13:32.205 user:       INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2016-09-08 09:13:32.205 user:       INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2016-09-08 09:13:32.205 user:       INFO 6228 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2016-09-08 09:13:32.393 user:       INFO 6228 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e07db1f: startup date [Thu Sep 08 09:13:31 IST 2016]; root of context hierarchy
+2016-09-08 09:13:32.439 user:       INFO 6228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2016-09-08 09:13:32.439 user:       INFO 6228 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2016-09-08 09:13:32.460 user:       INFO 6228 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-08 09:13:32.460 user:       INFO 6228 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-08 09:13:32.483 user:       INFO 6228 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2016-09-08 09:13:32.580 user:       INFO 6228 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2016-09-08 09:13:32.615 user:       INFO 6228 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8087 (http)
+2016-09-08 09:13:32.618 user:       INFO 6228 --- [main] com.main.RestWebCrawlingApplication      : Started RestWebCrawlingApplication in 1.833 seconds (JVM running for 2.204)
+2016-09-08 09:13:36.803 user:       INFO 6228 --- [RMI TCP Connection(2)-10.100.150.101] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2016-09-08 09:13:36.803 user:       INFO 6228 --- [RMI TCP Connection(2)-10.100.150.101] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7e07db1f: startup date [Thu Sep 08 09:13:31 IST 2016]; root of context hierarchy
+2016-09-08 09:13:36.804 user:       INFO 6228 --- [RMI TCP Connection(2)-10.100.150.101] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
