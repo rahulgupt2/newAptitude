@@ -22,7 +22,20 @@ public class Response {
     @JsonProperty("timetaken")
     private String         timeTaken;
 
-    @JsonProperty("Response")
+    @JsonProperty("news")
+    private NaiDuniaNews naiDuniaNews;
+        
+    @JsonProperty("news")
+    public NaiDuniaNews getNaiDuniaNews() {
+		return naiDuniaNews;
+	}
+
+    @JsonProperty("news")
+	public void setNaiDuniaNews(NaiDuniaNews naiDuniaNews) {
+		this.naiDuniaNews = naiDuniaNews;
+	}
+
+	@JsonProperty("Response")
     public String getResponse() {
         return response;
     }
@@ -54,9 +67,11 @@ public class Response {
 
 	@Override
 	public String toString() {
-		return "Response [succeeded=" + succeeded + ", response=" + response + ", timeTaken=" + timeTaken + "]";
+		return "Response [succeeded=" + succeeded + ", response=" + response + ", timeTaken=" + timeTaken
+				+ ", naiDuniaNews=" + naiDuniaNews + "]";
 	}
 
+	
   
 
   

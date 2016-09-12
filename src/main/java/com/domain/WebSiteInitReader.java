@@ -20,13 +20,17 @@ public class WebSiteInitReader {
 	public void init() {
 		
 		try {					
-			doc = Jsoup.connect("httdasdp://www.indiabix.com/").get();
+			//doc = Jsoup.connect("http://www.indiabix.com/").get();			
+			//doc = Jsoup.connect("http://naidunia.jagran.com/madhya-pradesh").get();
+			//doc = Jsoup.connect("http://naidunia.jagran.com/madhya-pradesh/indore").get();			
+			doc = Jsoup.connect("http://naidunia.jagran.com/madhya-pradesh/indore").get();			
 			LOG.info("Document is : ");			
 			LOG.info(doc.toString());
 		} catch (Exception e) {
 			LOG.error("Falied to connect", e);
 		}
 	}
+	
 	public Document getDoc() {
 		return doc;
 	}
