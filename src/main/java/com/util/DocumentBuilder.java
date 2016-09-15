@@ -30,7 +30,7 @@ public class DocumentBuilder {
 	
 	public String urlBuilderNaiDuniaMadhyaPradesh(String cityName) {
 		
-		String url = "http://naidunia.jagran.com/madhya-pradesh/" + cityName;		
+		String url = "http://naidunia.jagran.com/" + cityName;		
 		return url;		
 	}
 	

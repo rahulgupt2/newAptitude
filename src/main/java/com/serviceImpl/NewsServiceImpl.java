@@ -17,14 +17,20 @@ public class NewsServiceImpl implements NewsService{
 	
 
 	@Autowired
-	WebSiteReaderNews WebsiteReaderImplNews; 
+	WebSiteReaderNews websiteReaderImplNews; 
+	
+	@Autowired
+	WebSiteReaderNews webSiteReaderImplCityName;
 	
 	
 	@Override
 	public Response webFileReader(String cityName) {
 		
 		// TODO Auto-generated method stub
-		return WebsiteReaderImplNews.webSiteReader(cityName);
+		//return WebsiteReaderImplNews.webSiteReader(cityName);
+		
+		// for testing we have made this 
+		return websiteReaderImplNews.webSiteReader(cityName);
 	}
 
 	

@@ -49,13 +49,13 @@ public class AptitideController {
 	
 	
 	@CrossOrigin
-	@RequestMapping(value = "/news/{cityName}",
+	@RequestMapping(value = "/news/{stateName}/{cityName}",
 					method = RequestMethod.GET,
 					produces = MediaType.APPLICATION_JSON_VALUE)	
-	public ResponseEntity<Object> getNews(@PathVariable("cityName") String cityName) {
-		
-		
-		Response response = newsServiceImplOne.webFileReader(cityName);		
+	public ResponseEntity<Object> getNews(@PathVariable("stateName") String stateName,@PathVariable("cityName") String cityName) {
+				
+		String name = stateName + "/" + cityName;		
+		Response response = newsServiceImplOne.webFileReader(name);		
 				
 		return new ResponseEntity<Object>(response, HttpStatus.OK);
 				

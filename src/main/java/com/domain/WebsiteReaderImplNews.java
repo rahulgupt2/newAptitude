@@ -18,7 +18,8 @@ import com.model.Response;
 import com.util.DocumentBuilder;
 
 
-@Component("WebsiteReaderImplNews")
+
+@Component("websiteReaderImplNews")
 public class WebsiteReaderImplNews implements WebSiteReaderNews {
 
 	@Autowired
@@ -50,13 +51,14 @@ public class WebsiteReaderImplNews implements WebSiteReaderNews {
 			response.setResponse("cannot find cityName");			
 			return response;
 		}
-		if(cityName.length() > 20 ) {
+		/*if(cityName.length() > 20 ) {
 			response.setSucceeded("false");
 			response.setResponse("canot find cityName");
 			
 			return response;
-		}
+		}*/		
 		String url = documentBuilder.urlBuilderNaiDuniaMadhyaPradesh(cityName);
+		LOG.info("url is :", url );
 		documentNews = documentBuilder.getDocumnet(url);
 					
 		Elements elemetsMp = documentNews.getElementsByClass("article-list");
@@ -71,6 +73,10 @@ public class WebsiteReaderImplNews implements WebSiteReaderNews {
 		
 		NaiDuniaNews naiduniaNewsAll = new NaiDuniaNews(); 
 		List<NaiDuniaOneNews> naiDuniaOneNewsList = new ArrayList<NaiDuniaOneNews>();
+		
+		
+		
+		
 		elemetsMp.forEach(link -> {
 			if (link != null) {
 				NaiDuniaOneNews naiDuniaNews = new NaiDuniaOneNews();
@@ -135,8 +141,8 @@ public class WebsiteReaderImplNews implements WebSiteReaderNews {
 			title = link.attr("title");			
 			LOG.info("title is : "+ title);			
 			if(title ==null || title.equals("")) {
-				LOG.info("pagination urls are : " + link.attr("abs:href"));
-				paginationUrls.add(link.attr("abs:href"));
+				LOG.info("pagination urls are : " + link.attr("href"));
+				paginationUrls.add(link.attr("href"));
 			}		
 		});
 		naiduniaNewsAll.setPageinationUrls(paginationUrls);

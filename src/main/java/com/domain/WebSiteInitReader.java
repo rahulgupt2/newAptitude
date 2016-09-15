@@ -23,7 +23,7 @@ public class WebSiteInitReader {
 			//doc = Jsoup.connect("http://www.indiabix.com/").get();			
 			//doc = Jsoup.connect("http://naidunia.jagran.com/madhya-pradesh").get();
 			//doc = Jsoup.connect("http://naidunia.jagran.com/madhya-pradesh/indore").get();			
-			doc = Jsoup.connect("http://naidunia.jagran.com/madhya-pradesh/indore").get();			
+			doc = Jsoup.connect("http://naidunia.jagran.com/madhya-pradesh").get();			
 			LOG.info("Document is : ");			
 			LOG.info(doc.toString());
 		} catch (Exception e) {
