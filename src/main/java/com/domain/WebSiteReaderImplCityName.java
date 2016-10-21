@@ -46,8 +46,7 @@ public class WebSiteReaderImplCityName implements WebSiteReaderNews{
 			response.setSucceeded("false");
 			response.setResponse("Not Found init");			
 			return response;
-		}
-		
+		}		
 		
 		Elements newsUrls = documentNews.select("a[href]");
 		

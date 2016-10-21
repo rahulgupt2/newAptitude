@@ -20,7 +20,7 @@ public class DocumentBuilder {
 		try {					
 			doc = Jsoup.connect(url).get();
 			LOG.info("Document is : ");			
-			LOG.info(doc.toString());
+			//LOG.info(doc.toString());
 			return doc;
 		} catch (Exception e) {
 			LOG.error("Falied to connect", e);
@@ -34,6 +34,12 @@ public class DocumentBuilder {
 		return url;		
 	}
 	
+	
+			public String urlBuilderhttpeduzip(String specificUrl) {
+			
+			String url = "http://www.eduzip.com/" + specificUrl;		
+			return url;		
+			}
 	
 	
 }
